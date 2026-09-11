@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f111a;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1d2e;
+    padding: 10px 30px;
+    border-bottom: 2px solid #2e3456;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.lobby-card {
+    background-color: #16192b;
+    border: 1px solid #ff4757;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    max-width: 500px;
+    margin-top: 40px;
+}
+
+.highlight {
+    color: #ff4757;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.ad-container {
+    margin-top: 30px;
+    background-color: #0b0d16;
+    padding: 20px;
+    border: 1px dashed #4e5579;
+}
+
+.mock-ad-box {
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arena-layout {
+    width: 100%;
+    max-width: 1280px;
+    margin-top: 10px;
+}
+
+.stream-wrapper {
+    position: relative;
+    width: 100%;
+    background-color: #000000;
+    border: 3px solid #3c4475;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#emulator-canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: crosshair;
+}
+
+.control-panel-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #16192b;
+    padding: 10px 20px;
+    border-radius: 0 0 4px 4px;
+}
+
+.btn {
+    background-color: #2ed573;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #26af5f;
+}
+
+.hidden {
+    display: none !important;
+}
