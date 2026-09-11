@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Zone 360 - Cloud Gaming & Android Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>🎮 Game Zone 360</h1>
+        <div id="session-timer">Session Time Left: <span id="timer-count">60:00</span></div>
+    </header>
+
+    <main class="main-container">
+        <!-- THE LOBBY QUEUE AREA (Shown when servers are full) -->
+        <section id="queue-lobby" class="lobby-card hidden">
+            <h2>Servers are currently full!</h2>
+            <p>You are position <span id="queue-position" class="highlight">#3</span> in line.</p>
+            <p>Estimated wait time: <span id="queue-time">12 minutes</span>.</p>
+            
+            <!-- ADSTERRA AD PLACEMENT IN LOBBY -->
+            <div class="ad-container">
+                <p class="ad-notice">Advertisement - Watch while you wait</p>
+                <div class="mock-ad-box">
+                    <script type="text/javascript">
+                      atOptions = { 'key' : 'b5932006bbff90b58bbcc67682e8be52', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
+                    </script>
+                    <script type="text/javascript" src="https://www.highrevenueformat.com/b5932006bbff90b58bbcc67682e8be52/invoke.js"></script>
+                </div>
+            </div>
+        </section>
+
+        <!-- THE LIVE GAMEPLAY CANVAS RUNTIME -->
+        <section id="gameplay-arena" class="arena-layout">
+            <div class="stream-wrapper">
+                <!-- HTML5 Canvas displaying the stream forwarded from Cloud Server -->
+                <canvas id="emulator-canvas" width="1280" height="720"></canvas>
+            </div>
+            <div class="control-panel-footer">
+                <p>⚙️ Keymapper Active: Use <strong>W A S D</strong> to move | <strong>Space</strong> to jump.</p>
+                <button id="fullscreen-trigger" class="btn">Go Fullscreen</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Adsterra Extra Native / Pop Ads Scripts -->
+    <script src="https://pl31170257.profitableratecpmnetwork.com/13/dd/04/13dd04bed2b3a264e2b5c0bee6e12f6d.js"></script>
+    <script src="https://pl31170260.profitableratecpmnetwork.com/5e/57/d7/5e57d73e548507aa283de942881b1c82.js"></script>
+
+    <script src="keymapper.js"></script>
+</body>
+</html>
